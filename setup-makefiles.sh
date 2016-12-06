@@ -2,7 +2,7 @@
 
 set -e
 
-DEVICE=clark
+DEVICE=kinzie
 VENDOR=motorola
 
 # Load extractutils and do some sanity checks
@@ -27,7 +27,7 @@ write_headers
 # The blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt
 
-printf '\n%s\n' "\$(call inherit-product, vendor/qcom/binaries/msm8992/graphics/graphics-vendor.mk)" >> "$PRODUCTMK"
+printf '\n%s\n' "\$(call inherit-product, vendor/qcom/binaries/msm8994/graphics/graphics-vendor.mk)" >> "$PRODUCTMK"
 
 # We are done!
 write_footers

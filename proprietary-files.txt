@@ -124,7 +124,7 @@ etc/firmware/cpp_firmware_v1_6_0.fw
 etc/firmware/cpp_firmware_v1_8_0.fw
 etc/permissions/com.motorola.camera.xml
 etc/permissions/com.motorola.gallery.xml
-lib/hw/camera.msm8992.so:lib/hw/camera.vendor.msm8992.so
+lib/hw/camera.msm8994.so:lib/hw/camera.vendor.msm8994.so
 lib/libmot_lux_standardization.so
 lib/libadvalgcore.so
 lib/libAisAdapter.so
@@ -291,8 +291,10 @@ vendor/lib/libqti-iop-client.so
 vendor/lib64/libqti-iop-client.so
 
 # DM/Sprint
--app/DMConfigUpdateLight/DMConfigUpdateLight.apk
--app/HiddenMenuLight/HiddenMenuLight.apk
+-app/DMConfigUpdate/DMConfigUpdate.apk
+-app/HiddenMenu/HiddenMenu.apk
+etc/permissions/com.android.omadm.service.xml
+etc/sysconfig/whitelist_com.android.omadm.service.xml
 lib/libdmengine.so
 lib/libdmjavaplugin.so
 -priv-app/CQATest/CQATest.apk
@@ -302,6 +304,7 @@ lib/libdmjavaplugin.so
 lib/libdmengine.so:priv-app/DMService/lib/arm/libdmengine.so
 lib/libdmjavaplugin.so:priv-app/DMService/lib/arm/libdmjavaplugin.so
 -priv-app/DiagMon/DiagMon.apk
+-priv-app/GCS/GCS.apk:priv-app/GCS/GCS.apk:PRESIGNED
 -priv-app/LifetimeData/LifetimeData.apk
 -priv-app/SprintDM/SprintDM.apk
 
@@ -441,8 +444,8 @@ vendor/lib64/libxtwifi_zpp_adaptor.so
 # Adreno GPU
 etc/firmware/leia_pfp_470.fw
 etc/firmware/leia_pm4_470.fw
-vendor/firmware/a420_pfp.fw
-vendor/firmware/a420_pm4.fw
+etc/firmware/a420_pfp.fw
+etc/firmware/a420_pm4.fw
 vendor/lib/libOpenCL.so
 vendor/lib64/libOpenCL.so
 
@@ -575,20 +578,20 @@ vendor/lib64/libxml.so
 vendor/lib64/libqcmaputils.so
 
 # Touchscreen firmware
-etc/firmware/synaptics-s2726-15052160-1d19d9-clark.tdat
-etc/firmware/synaptics-s3528-15071401-1e29b4-clark.tdat
-etc/firmware/synaptics-s3528ar-15071401-1e29b4-clark.tdat
+etc/firmware/synaptics-s3528-15070602-1def27-kinzie.tdat
+etc/firmware/synaptics-s3528ks-14102100-1a96a7-kinzie.tdat
+etc/firmware/synaptics-s3528ks2-15070602-1def27-kinzie.tdat
 
 # Sensors
 bin/motosh
 etc/firmware/sensorhubfw.bin
-lib/hw/sensors.msm8992.so
-lib64/hw/sensors.msm8992.so
+lib/hw/sensors.msm8994.so
+lib64/hw/sensors.msm8994.so
 vendor/lib/libsubsystem_control.so
 vendor/lib64/libsubsystem_control.so
 vendor/lib/libSubSystemShutdown.so
 vendor/lib64/libSubSystemShutdown.so
-lib64/hw/sensorhub.msm8992.so
+lib64/hw/sensorhub.msm8994.so
 vendor/lib/libsensor1.so
 vendor/lib64/libsensor1.so
 
