@@ -669,9 +669,7 @@
 	</path>
 	
 	<path name="speaker-reverse">
-		<ctl name="SLIM_0_RX Channels" value="Two" />
-		<ctl name="AIF1TX1 Input 1" value="SLIMRX1" />
-		<ctl name="AIF1TX2 Input 1" value="SLIMRX2" />
+		<path name="speaker" />
 	</path>
 
 	<path name="speaker-mic">
