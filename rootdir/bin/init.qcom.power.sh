@@ -96,8 +96,6 @@ write /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres 30
 write /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms 100
 write /sys/devices/system/cpu/cpu4/core_ctl/task_thres 4
 write /sys/devices/system/cpu/cpu4/core_ctl/is_big_cluster 1
-chown system:system /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
-chown system:system /sys/devices/system/cpu/cpu4/core_ctl/max_cpus
 
 write /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres 0
 write /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres 0
@@ -136,12 +134,6 @@ write /proc/sys/kernel/sched_boost 0
 
 # set GPU default power level to 5 (180MHz) instead of 4 (305MHz)
 write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 5
-
-# Configure foreground and background cpuset
-write /dev/cpuset/foreground/cpus 0-7
-write /dev/cpuset/foreground/boost/cpus 4-7
-write /dev/cpuset/background/cpus 0-2
-write /dev/cpuset/system-background/cpus 0-3
 
 # android background processes are set to nice 10. Never schedule these on the a57s.
 write /proc/sys/kernel/sched_upmigrate_min_nice 9
